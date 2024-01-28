@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link href="form.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="buttons">
+      <button class="btn1">New Application</button>
+      <button class="btn2">Download ID Card</button>
+      <button class="btn2">Results</button>
+    </div>
+
+    <div class="parentDiv">
+      <div class="left">
+        <form id="leftF">
+          <p class="leftP">Select city</p>
+          <input
+            type="text"
+            class="leftInput"
+            name="city"
+            placeholder="Select City"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="leftP">Full Name</p>
+          <input
+            type="text"
+            class="leftInput"
+            name="full name"
+            placeholder="Full name"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="leftP">Email</p>
+          <input
+            type="email"
+            class="leftInput"
+            name="email"
+            placeholder="Email"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="leftP">CNIC</p>
+          <input
+            type="text"
+            class="leftInput"
+            name="CNIC"
+            placeholder="CNIC"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="leftP">Date of birth</p>
+          <input
+            type="date"
+            class="date"
+            name="date of birth"
+            placeholder="mm/dd/yyyy"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="leftP">Address</p>
+          <input
+            type="text"
+            class="address"
+            name="address"
+            placeholder="Address"
+            maxlength="30"
+          />
+
+          <p class="leftP">Last qualification</p>
+          <select class="qualify" name="qualification">
+              <option placeholder="Matric/O-levels">Matric/O-levels</option>
+              <option placeholder="Intermediate/A-levels">Intermediate/A-levels</option>
+              <option placeholder="Graduate">Graduate</option>
+              <option placeholder="Undergraduatwe">Undergraduate</option>
+              <option placeholder="Masters">Masters</option>
+              </select>
+
+              <p class="leftP">Do you have a Laptop?</p>
+            <select class="qualify" name="Laptop">
+                <option placeholder="Yes">Yes</option>
+                <option placeholder="No">No</option>
+                </select>
+        </form>
+      </div>
+
+      <div class="right">
+        <form id="rightF">
+          <p class="rightP">Select course or event</p>
+          <select class="dropDown" name="course">
+            <option value="Web and Development">Web and App Development</option>
+            <option value="Flutter">Flutter</option>
+            <option value="Artifical Intelligence">Artifical Intelligence</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+            <option value="Artifical Intelligence">Artifical Intelligence</option>
+            <option value="Video Animation">Video Animation</option>
+          </select>
+
+          <p class="rightP">Father name</p>
+          <input
+            type="text"
+            class="rightInput"
+            name="father name"
+            placeholder="Father Name"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="rightP">Phone</p>
+          <input
+            type="tel"
+            pattern="[0-9]{4}-[0-9]{7}"
+            class="rightInput"
+            name="number"
+            placeholder="Phone"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="rightP">Father's CNIC (optional)</p>
+          <input
+            type="text"
+            class="rightInput"
+            name="father's cnic"
+            placeholder="CNIC"
+            size="70"
+            maxlength="30"
+          />
+
+          <p class="rightP">Select gender</p>
+          <select class="dropDown" name="gender">
+            <option placeholder="Male">Male</option>
+            <option placeholder="Female">Female</option>
+            <option placeholder="prefer not say">Prefer no to say</option>
+          </select>
+        </form>
+      </div>
+
+    </div>
+
+    
+      <!-- Second portion -->
+
+      <div class="pic">
+        <form>
+        <p class="picP">Picture</p>
+        <input class="file" type="file" name="picture" /><br />
+        </form>
+      </div>
+
+      <div class="text">
+        <p>
+            With white or blue backgorund<br>
+            File size must be less than 1MB<br>
+            File type: jpg,jpeg,png<br>
+            Upload your recent passport size picture<br>
+            Your face should be clearly visible without any glasses
+        </p>
+      </div>
+
+     <button class="sub">Submit</button>
+  </body>
+</html>
